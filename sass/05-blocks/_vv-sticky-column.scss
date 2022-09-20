@@ -1,0 +1,39 @@
+.is-style {
+    &-vv-sticky-column {
+        .wp-block-group__inner-container {
+            
+            .wp-block-column:first-child {              
+                margin-top: 5rem;
+
+                @include media(tablet) {
+                    top: 3rem;                   
+                    position: sticky;
+                }
+
+                @include media(wide) {
+                    flex-basis: 33% !important;
+                    top: 3rem;
+                    position: sticky;
+                }
+            } 
+    
+            .wp-block-column:last-child {
+                @include media(wide) {
+                    flex-basis: 67% !important;
+                }
+            }
+
+            .is-style-vv-cta-paragraph {
+                width: 100% !important;
+
+                @include media(tablet) {
+                    width: 80% !important;
+                }
+
+                @include media(wide) {
+                    width: 63% !important;
+                }
+            }
+        }        
+    }
+}

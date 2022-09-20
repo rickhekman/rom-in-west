@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Drost & Co v4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2020-07-14 12:51+0200\n"
+"PO-Revision-Date: 2020-07-14 12:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: wilco@drost-co.nl\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html_x;__;_e;__ngettext;_n;__ngettext_noop;"
+"_n_noop;_x;_nx;_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;"
+"esc_html_e;_c;_nc\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: footer.php:26
+msgid "Y"
+msgstr ""
+
+#: footer.php:59
+#, php-format
+msgid "To the top %s"
+msgstr ""
+
+#: footer.php:65
+#, php-format
+msgid "Up %s"
+msgstr ""
+
+#: functions.php:157
+#, php-format
+msgid "View all posts filed under %s"
+msgstr ""
+
+#: functions.php:171
+msgid "Continue reading"
+msgstr ""
+
+#: inc/class-agenda.php:148
+msgid "Location"
+msgstr ""
+
+#: inc/class-agenda.php:157
+msgid "Opening"
+msgstr ""
+
+#: index.php:33
+msgid "Search:"
+msgstr ""
+
+#: index.php:41
+#, php-format
+msgid "We found %s result for your search."
+msgstr ""
+
+#: index.php:49
+msgid ""
+"We could not find any results for your search. You can give it another try "
+"through the search form below."
+msgstr ""
+
+#: index.php:134
+msgid "search again"
+msgstr ""
+
+#: template-parts/related-posts.php:133
+msgid "Related posts"
+msgstr "Gerelateerde berichten"
+
+#: templates/template-hide-title.php:40
+#, fuzzy
+#| msgid "Pages:"
+msgid "Page"
+msgstr "Pagina&#39;s:"
+
+#: templates/template-hide-title.php:40
+msgid "Pages:"
+msgstr "Pagina&#39;s:"
+
+#~ msgid "Oops! That page can&rsquo;t be found."
+#~ msgstr "Oeps! Die pagina kon niet worden gevonden."
+
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try one of the "
+#~ "links below or a search?"
+#~ msgstr "Gebruik het menu links om verder te gaan."
+
+#~ msgid "Most Used Categories"
+#~ msgstr "Meestgebruikte categorieën"
+
+#, php-format
+#~ msgid "Try looking in the monthly archives. %1$s"
+#~ msgstr "Probeer de maandelijkse archieven.  %1$s"
+
+#, php-format
+#~ msgid "One thought on &ldquo;%1$s&rdquo;"
+#~ msgstr "Eén reactie op &ldquo;%1$s&rdquo;"
+
+#, php-format
+#~ msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+#~ msgstr "%1$s reactie op &ldquo;%2$s&rdquo;"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Reacties zijn gesloten."
+
+#, php-format
+#~ msgid "Theme: %1$s"
+#~ msgstr "Thema: %1$s"
+
+#~ msgid "Primary"
+#~ msgstr "Primair"
+
+#~ msgid "Sidebar"
+#~ msgstr "Zijbalk"
+
+#~ msgid "Add widgets here."
+#~ msgstr "Voeg hier widgets toe."
+
+#~ msgid "Skip to content"
+#~ msgstr "Naar de inhoud springen"
+
+#, php-format
+#~ msgid "author %s"
+#~ msgstr "auteur %s"
+
+#, php-format
+#~ msgid "Posted in %1$s"
+#~ msgstr "Geplaatst in %1$s"
+
+#, php-format
+#~ msgid "Tagged %1$s"
+#~ msgstr "Andere artikelen gelabeld met %1$s"
+
+#, php-format
+#~ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+#~ msgstr ""
+#~ "Laat een reactie achter <span class=\"screen-reader-text\">op %s</span>"
+
+#~ msgid "View your shopping cart"
+#~ msgstr "Bestelling bekijken"
+
+#, php-format
+#~ msgid "Search Results for: %s"
+#~ msgstr "Zoekresultaten voor: %s"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Niets gevonden"
+
+#, php-format
+#~ msgid ""
+#~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#~ msgstr ""
+#~ "Klaar om je eerste bericht te publiceren? <a href=\"%1$s\">Start hier</a>."
+
+#~ msgid ""
+#~ "Sorry, but nothing matched your search terms. Please try again with some "
+#~ "different keywords."
+#~ msgstr ""
+#~ "Helaas, er waren geen overeenkomsten met jouw zoekterm. Probeer het "
+#~ "opnieuw met enkele andere zoekwoorden."
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching can help."
+#~ msgstr ""
+#~ "Het lijkt erop dat wij niet kunnen vinden wat jij zoekt. Wellicht helpt "
+#~ "de zoekfunctie."
+
+#, php-format
+#~ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+#~ msgstr "Bewerken <span class=\"screen-reader-text\">%s</span>"
+
+#, php-format
+#~ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+#~ msgstr "Verder lezen<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#, fuzzy
+#~| msgid "Primary"
+#~ msgid "Primary Menu"
+#~ msgstr "Primair"
+
+#~ msgctxt "post date"
+#~ msgid "Posted on %s"
+#~ msgstr "Gepubliceerd op %s"
+
+#~ msgctxt "post author"
+#~ msgid "by %s"
+#~ msgstr "door %s"
+
+#~ msgid "more"
+#~ msgstr "meer"
+
+#~ msgid "meer"
+#~ msgstr "plus"
+
+#~ msgid "Main Menu"
+#~ msgstr "Hoofdmenu"
+
+#~ msgid "Social Links Menu"
+#~ msgstr "Socialelinksmenu"
+
+#~ msgid "Footer Menu"
+#~ msgstr "Voettekst menu"
+
+#~ msgid "Expand child menu"
+#~ msgstr "Menu en widgets"
+
+#~ msgid "Collapse child menu"
+#~ msgstr "Menu en widgets"
+
+#~ msgid "Footer Social Links Menu"
+#~ msgstr "Socialelinksmenu"
+
+#~ msgid "Prev"
+#~ msgstr "Vorige"
+
+#~ msgid "Next"
+#~ msgstr "Volgende"

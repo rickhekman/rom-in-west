@@ -1,0 +1,17 @@
+.vv-breadcrumbs {
+
+    &__list {
+        max-width: var(--responsive--alignwide-width);
+        margin: 0 auto;
+        margin-bottom: var(--global--spacing-vertical);
+        p {
+            font-size: smaller;
+        }
+    } 
+}
+
+.home {
+    p#breadcrumbs {
+        display: none;
+    }    
+}

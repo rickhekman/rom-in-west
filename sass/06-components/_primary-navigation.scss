@@ -1,0 +1,29 @@
+.primary-navigation {
+    --primary-nav--font-size: var(--global--font-size-sm);
+
+    align-self: flex-start;
+    margin: 3rem 0 0 0;
+    
+    @include media(mobile) {
+        .menu-wrapper {
+            > li {
+                position: relative;
+                margin-right: 2rem;
+
+                > a {
+                    font-weight: bold;
+                }
+
+                button {
+                    color: var(--global--color-white);
+                }
+            }
+        }
+    }
+
+    > div > .menu-wrapper > li > .sub-menu {
+        @include media(mobile) {
+            padding-top: 0;
+        }
+    }
+}

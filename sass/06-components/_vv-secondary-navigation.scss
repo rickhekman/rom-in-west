@@ -1,0 +1,81 @@
+.vv-secondary-navigation {
+    align-self: flex-start;
+
+    @include media(mobile-only) {
+        display: none;
+    }
+    
+    &__menu {
+        display: flex;
+        margin-left: 1rem;
+
+        @include media(tablet) {
+            margin-left: 4rem;
+            padding-top: 2rem;
+            font-size: var(--global--font-size-xs);
+        } 
+        
+        @include media(wide) {
+            margin-left: 6.4rem; 
+            font-size: var(--global--font-size-base);
+        }
+    }
+
+    &__item {
+        list-style: none;
+        position: relative;        
+
+        @include media(tablet) {
+            margin-right: 2rem;
+        }
+        
+        a {                  
+            text-decoration: underline;
+            margin-right: 1.2rem;            
+        }
+
+        &::after {
+            content: '>';
+            position: absolute;           
+            right: 0;                              
+            font-size: var(--global--font-size-md);                                    
+            color: black !important;  
+            
+            @include media(wide) {
+                font-size: 1.30rem; 
+                bottom: -.35rem; 
+            }
+        }
+    }
+
+    &__item:not(:first-child) {
+
+        @include media(tablet) {
+            margin-left: .5rem;
+        }
+
+        @include media(wide) {
+            margin-left: 0;
+        }
+    }    
+}
+
+.vv-login-menu {
+    text-decoration: none;
+    color: var(--vv--color-dark-green);
+    font-size: .85rem;
+    align-self: flex-end;
+    margin-top: -1.8rem;
+    margin-right: 3.7rem;
+    font-weight: bold;
+
+    @include media(tablet) {
+        font-size: var(--global--font-size-base) !important; 
+        margin-top: -2.8rem;
+        margin-right: 6rem;
+    }
+
+    @include media(wide) {
+        margin-top: -1.8rem;
+    }
+}

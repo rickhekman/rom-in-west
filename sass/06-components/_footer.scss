@@ -1,0 +1,144 @@
+.site-footer {
+      // Define width for SVG in Firefox.
+      --branding--logo--max-width: 330px;
+      --branding--logo--max-height: 98.5px;
+      --branding--logo--max-width-tablet: 247.5px;
+      --branding--logo--max-height-tablet: 73.87px;
+      --branding--logo--max-width-mobile: 165px;
+      --branding--logo--max-height-mobile: 49.25px;
+
+    padding-bottom: 0;
+    max-width: var(--responsive--alignfull-width) !important;
+    background-color: var(--vv--color-green);
+    display: flex;
+    justify-content: center;
+
+    @include media(wide){
+        padding: 0 2rem;
+    }
+    
+    &__content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: var(--responsive--alignwide-width) !important;
+        margin: 0 auto;
+        padding: 3rem 0;
+        width: 100%;
+    }
+
+    .site-info {
+        align-self: flex-start;
+        padding-top: 0;
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;        
+
+        .site-name {
+            color: white;                    
+        }
+
+        .vv-site-logo {
+            margin: 0;
+
+            &__no-payoff {
+                display: flex;
+                max-width: var(--branding--logo--max-width-mobile); 
+                
+                @include media(wide) {
+                    display: none;                 
+                }
+            }
+    
+            &__payoff {
+                display: none;
+                
+                @include media(wide) {
+                    display: flex;
+                }
+            }
+            
+            img {
+                max-height: 100% !important;
+    
+                @include media(tablet) {
+                    max-width: var(--branding--logo--max-width-tablet);
+                }
+        
+                @include media(wide) {
+                    max-width: var(--branding--logo--max-width);
+                }
+            }
+        }
+
+        .powered-by {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            margin-left: 0;
+            margin-top: 2rem;
+            font-size: smaller;
+       }      
+    }
+
+    .vv-site-contact {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+        margin-top: 2rem;
+
+        @include media(tablet) {
+            margin-top: 2rem;
+        }
+
+        @include media(wide) {
+            margin-top: 0;
+        }
+
+        &__links {
+           margin-left: 0;
+
+           @include media(tablet) {
+            margin-left: 3rem;
+           }
+
+            ul {
+                padding-left: 0;
+                display: flex;
+            }
+ 
+            li {
+                list-style: none !important;
+
+                a {
+                    color: white;
+                    font-size: smaller;                    
+                }
+            }
+
+            li:not(:last-of-type) {
+                margin-right: .8rem;
+            }
+        }
+
+        &__social {
+            display: flex;
+
+            svg {
+                margin-right: .5rem;
+                @include media(mobile-only) {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+        
+        p {
+            font-size: normal;
+            text-align: left;
+        }
+    }
+}

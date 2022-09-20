@@ -1,0 +1,68 @@
+.vv-colors-grid {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    max-width: 100% !important;    
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;                          
+    }
+
+    &__green {
+        flex-grow: 0;
+        flex-shrink: 0;           
+        height: 5rem;
+        width: 5rem;
+        background-color: var(--vv--color-green);
+    }
+
+    &__dark-green {
+        flex-grow: 0;
+        flex-shrink: 0; 
+        height: 5rem;
+        width: 5rem;
+        background-color: var(--vv--color-dark-green);
+    }
+
+    &__light-green {
+        flex-grow: 0;
+        flex-shrink: 0; 
+        height: 5rem;
+        width: 5rem;
+        background-color: var(--vv--color-light-green);
+    }
+
+    &__yellow {
+        flex-grow: 0;
+        flex-shrink: 0; 
+        height: 5rem;
+        width: 5rem;
+        background-color: var(--vv--color-yellow);
+    }
+
+    &__yellow-green {
+        flex-grow: 0;
+        flex-shrink: 0; 
+        height: 5rem;
+        width: 5rem;
+        background-color: var(--vv--color-yellow-green);
+    }
+
+    &__black {
+        flex-grow: 0;
+        flex-shrink: 0; 
+        height: 5rem;
+        width: 5rem;
+        background-color: black;
+    }
+
+    &__color-codes {        
+        padding: 0 .5rem;
+        
+        p {
+            font-size: smaller;
+        }
+    }
+}

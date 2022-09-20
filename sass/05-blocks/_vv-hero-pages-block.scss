@@ -1,0 +1,88 @@
+.is-style {
+    &-vv-hero-pages-block {
+        padding-top: var(--global--spacing-vertical) !important;
+        padding-bottom: 0 !important; 
+
+        @include media(tablet) {
+            padding-top: calc(3 * var(--global--spacing-vertical)) !important;
+        }
+
+        @include media(wide) {
+            padding-top: calc(2.5 * var(--global--spacing-vertical)) !important;
+        }
+        
+        .wp-block-group__inner-container {
+
+            .wp-block-media-text.has-media-on-the-right {
+                grid-template-columns: 1fr 100% !important;
+
+                @include media(tablet) {
+                    grid-template-columns: 1fr 100% !important;
+                }
+
+                @include media(wide) {
+                    grid-template-columns: 1fr 100% !important;
+                }
+            }
+
+            .wp-block-media-text__content {
+                padding: 0;
+                margin-top: -4rem;               
+                grid-row: 1;
+                grid-column: 1 / span 2;
+
+                .is-style-vv-cta-paragraph {
+                    margin-top: 2.5rem;
+                    padding: 1rem;
+                    width: 60%;
+                    font-size: smaller;
+
+                    @include media(tablet) {
+                        width: 33%;
+                    }
+
+                    @include media(wide) {                        
+                        width: 22%;
+                    }
+                }
+            }
+
+            .wp-block-media-text__media {
+                margin-top: -3.6rem;
+                grid-column: 2;
+
+                @include media(tablet) {
+                    margin-top: -3rem;
+                }
+
+                @include media(wide) {
+                    margin-top: -2rem;
+                }
+
+                img {
+                    vertical-align: top;
+                }
+            }
+
+            h1 {
+                font-size: 2.3rem;
+                margin: 0;
+                z-index: 1;                                
+                text-transform: uppercase;
+
+                @include media(tablet) {
+                    font-size: 4rem; 
+                }
+    
+                @include media(wide) {
+                    font-size: 6rem;
+                    margin-top: .5rem; 
+                }
+            }
+        }              
+    }
+
+    &-vv-hero-pages-title {
+        padding-top: var(--global--spacing-vertical) !important;
+    }
+}

@@ -1,0 +1,10 @@
+.is-style {
+    &-vv-group-buttons {
+        .wp-block-group__inner-container {
+            @include media(wide) {
+                width: 70%;
+                margin-left: 0;
+            }
+        }
+    }
+}

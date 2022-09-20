@@ -1,0 +1,28 @@
+.is-style {
+    &-vv-group-padding {
+        padding-top: var(--global--spacing-vertical) !important;
+        padding-bottom: var(--global--spacing-vertical) !important;
+
+        @include media(wide) {
+            padding-top: calc(2 * var(--global--spacing-vertical)) !important;
+            padding-bottom: calc(2 * var(--global--spacing-vertical)) !important;
+        }
+    }
+
+    &-vv-group-padding-top-large {
+        padding-top: calc(4.5 * var(--global--spacing-vertical)) !important;
+
+        @include media(wide) {
+            padding-top: calc(5 * var(--global--spacing-vertical)) !important;
+        }
+    }
+
+    &-vv-group-padding-bottom {
+        padding-bottom: var(--global--spacing-vertical) !important;
+
+        @include media(wide) {
+            
+            padding-bottom: calc(2 * var(--global--spacing-vertical)) !important;
+        }
+    }
+}

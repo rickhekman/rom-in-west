@@ -1,0 +1,36 @@
+.is-style {
+    &-vv-theme-intro {
+        .wp-block-group__inner-container {
+            padding-bottom: var(--global--spacing-vertical) !important;
+
+            .wp-block-buttons {
+                width: auto;
+                margin-left: 0;
+
+                @include media(wide){
+                    width: 70%;
+                }
+            }
+
+            p {
+                max-width: auto !important;
+
+                @include media(wide) {
+                    max-width: 70% !important;
+                }
+            }
+
+            .is-style-vv-cta-paragraph {
+                width: 100%;
+
+                @include media(tablet) {
+                    width: 50%;
+                }
+                
+                @include media(wide) {
+                    width: 23%;
+                }
+            }
+        }
+    }
+}

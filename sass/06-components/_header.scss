@@ -1,0 +1,122 @@
+.site-header {
+     // Define width for SVG in Firefox.
+     --branding--logo--max-width: 330px;
+     --branding--logo--max-height: 98.5px;
+     --branding--logo--max-width-tablet: 247.5px;
+     --branding--logo--max-height-tablet: 73.87px;
+     --branding--logo--max-width-mobile: 165px;
+     --branding--logo--max-height-mobile: 49.25px;
+ 
+     // Vertical alignment hamburger menu.
+     --logo--height-mobile: var(--branding--logo--max-height-mobile);
+
+    justify-content: center;
+    
+    max-width: var(--responsive--alignfull-width) !important;
+    top: var(--global--admin-bar--height);
+    z-index: 2;
+    padding-top: 0;
+    background-color: white;
+    padding-bottom: calc(2 * var(--global--spacing-vertical));
+
+    @include media(laptop) {
+        padding-top: 0 !important;
+        
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: var(--global--admin-bar--height);
+        margin-top: 5rem;
+        bottom: 0;
+        max-width: var(--responsive--alignfull-width) !important;
+        border-bottom: 2px solid var(--vv--color-green);
+
+        @include media(tablet) {            
+            margin-top: 6.7rem;
+        }
+
+        @include media(wide) {            
+            margin-top: 8.8rem;
+        }
+    }
+
+    .vv-site-logo {      
+        max-width: var(--branding--logo--max-width-mobile);        
+        padding-top: calc(0.8 * var(--global--spacing-vertical));
+        margin-top: 0;
+        align-self: flex-start;
+        position: relative;
+
+        &__no-payoff {
+            display: flex;
+            max-width: var(--branding--logo--max-width-mobile); 
+            
+            @include media(wide) {
+                display: none;                 
+            }
+        }
+
+        &__payoff {
+            display: none;
+            
+            @include media(wide) {
+                display: flex;
+            }
+        }
+
+        img {
+            max-height: 100% !important;
+
+            @include media(tablet) {
+                max-width: var(--branding--logo--max-width-tablet);
+            }
+    
+            @include media(wide) {
+                max-width: var(--branding--logo--max-width);
+            }
+        }
+
+        &::after {            
+            content: '';
+            display: block;
+            position: absolute;
+            top: 4.3rem;
+            left: 1.3rem;
+            bottom: 0rem;
+            width: 1.7rem;
+            height: 1.7rem;
+            background: white;
+            border-right: 2px solid var(--vv--color-green);
+            border-bottom: 2px solid var(--vv--color-green);
+            transform: rotate(45deg) skew(20deg, 20deg);
+            z-index: -1;
+    
+            @include media(tablet) {
+                top: 5.7rem;
+                left: 2.18rem;
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+    
+            @include media(wide) {
+                top: 7.4rem;
+                left: 2.95rem;
+                width: 3rem;
+                height: 3rem;
+            }
+        } 
+    }
+}
+
+.vv-header-content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;    
+    align-items: center;
+    max-width: var(--responsive--alignwide-width) !important;
+    width: 100%;    
+    z-index: 3;
+}

@@ -1,0 +1,19 @@
+h1 {    
+    color: var(--vv--color-dark-green);
+    font-size: 2rem;
+    margin-left: 0;
+    z-index: 1;                                
+    text-transform: uppercase;
+
+    @include media(tablet) {
+        font-size: 4rem; 
+    }
+
+    @include media(wide) {
+        font-size: 6rem; 
+    }
+}
+
+h2 {
+    word-break: break-word;
+}

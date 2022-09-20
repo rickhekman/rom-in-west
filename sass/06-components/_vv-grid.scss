@@ -1,0 +1,97 @@
+.vv-grid {
+    padding-top: var(--global--spacing-vertical) !important;
+    padding-bottom: calc(1 * var(--global--spacing-vertical)) !important;
+    
+    @include media(wide) {
+        padding-top: calc(2 * var(--global--spacing-vertical)) !important;
+        padding-bottom: calc(5 * var(--global--spacing-vertical)) !important;
+    }
+
+    &__header {
+        max-width: var(--responsive--alignwide-width);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-bottom: calc(2 * var(--global--spacing-vertical));
+    }
+
+    &__title {        
+        flex-basis: 100%;
+        color: var(--vv--color-dark-green);
+        text-transform: uppercase;
+        margin-bottom: var(--global--spacing-vertical);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        list-style: none;
+        max-width: var(--responsive--alignwide-width);
+        margin: 0 auto;
+        padding: 0;
+
+        @include media(wide) {
+            gap: 3rem;
+        }
+
+        &::after { // pseudo element for alignment last row.
+            content: '';
+            flex-grow: 1;
+
+            @include media(tablet) {
+                flex-basis: calc(50% - 2rem);
+                max-width: calc(50% - 2rem);
+            }
+
+            @include media(wide) {
+                flex-basis: calc(33.333% - 2rem);
+                max-width: calc(33.333% - 2rem);
+            }            
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 3px 8px 1px var(--vv--color-grey);
+            position: relative;
+            flex-grow: 1;
+
+            @include media(tablet) {
+                flex-basis: calc(50% - 2rem);
+                max-width: calc(50% - 2rem);
+            }
+
+            @include media(wide) {
+                flex-basis: calc(33.333% - 2rem);
+                max-width: calc(33.333% - 2rem);
+            }
+        }
+    }
+}
+
+.pagination {
+    border-top: 2px dotted var(--vv--color-blue);
+
+    a {
+        color: var(--vv--color-blue);
+
+        &:hover {
+            color: var(--vv--color-blue);
+            text-decoration-color: var(--vv--color-blue);
+        }
+    }
+}
+
+.site-main {
+    padding-top: 0;
+    padding-bottom: 0 !important;
+}
+
+// All links (except buttons) focus color for screen readers, 
+a {
+    &:focus {
+        background: black !important;
+    }
+}

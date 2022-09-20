@@ -1,0 +1,7 @@
+.is-style {
+    &-drst-group-align-content-left {
+        .wp-block-group__inner-container > * {
+            margin-left: 0 !important;
+        }
+    }
+}

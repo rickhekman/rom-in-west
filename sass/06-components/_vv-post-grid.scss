@@ -1,0 +1,44 @@
+.vv-post-grid {
+    max-width: var(--responsive--alignwide-width) !important;
+    margin: 0 auto !important;
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: calc(.5 * var(--global--spacing-vertical));
+
+        &-title {
+            margin-right: 2rem;
+        }
+
+        &-link {
+            align-self: flex-end;
+            color: var(--vv--color-dark-green);
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+    }
+    
+    &__content{
+        display: flex;        
+        flex-wrap: wrap;        
+        gap: 3rem;    
+
+        @include media(wide) {
+            flex-wrap: nowrap;            
+        }
+    
+    }
+
+    &__item {
+        box-shadow: 1px 3px 8px 1px var(--vv--color-grey);
+        flex-basis: 100%;
+        min-width: 25%;
+        flex-grow: 0;
+
+        @include media(wide) {
+            flex-basis: 33.333%;       
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.wp-block-button.is-style-outline {
+	--global--color-primary: var(--vv--color-green); 
+	--local--color-background: var(--vv--color-yellow);
+
+	.wp-block-button__link {
+		&:hover,
+		&:active {
+			background-color: var(--vv--color-green) !important;
+			color: var(--vv--color-yellow) !important;
+			border-color: var(--vv--color-green) !important;
+		}
+	}
+}
+
+.wp-block-button:not(.is-style-outline) {	
+	.wp-block-button__link {
+		&:hover, 
+		&:active {
+			background-color: var(--vv--color-green) !important;
+			color: var(--vv--color-yellow) !important;
+			border-color: var(--vv--color-green) !important;
+		}
+	}
+}

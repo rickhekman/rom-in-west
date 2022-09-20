@@ -1,0 +1,82 @@
+.nf-form-cont {
+    border: var(--form--border-width) solid var(--form--border-color) !important;  
+    max-width: 100% !important;  
+    padding: 2em;
+
+    @include media(wide) {
+        max-width: 75% !important;  
+    }
+}
+
+// Contact form
+.nf-form-content {  
+    max-width: none !important;     
+    margin: 1rem auto !important;
+    padding: 0 !important;
+
+    .nf-field-label {        
+        label {
+            font-weight: var(--form--label-weight);                   
+        }
+    }
+
+    .nf-field-element {
+        .ninja-forms-field {
+            background: white; 
+            color: black; 
+            font-weight: bold; 
+            
+            &:focus {
+                color: black;
+            }
+        }                
+    }
+
+    .submit-container {
+        .nf-element {
+            background: var(--vv--color-green);
+            color: var(--vv--color-yellow);
+            border: var(--button--border-width) solid transparent;            
+
+            &:hover {
+                background: var(--vv--color-white);
+                color: var(--vv--color-green);
+                border: var(--button--border-width) solid var(--vv--color-green);
+            }
+        } 
+    }
+
+    .field-wrap {
+        display: block;
+    }
+    
+}
+
+// Quickscan form
+.nf-form-content {
+
+    .nf-next-item,
+    .nf-previous-item {
+
+        .nf-next,
+        .nf-previous {
+            background: var(--vv--color-green);
+            color: var(--vv--color-yellow);
+            border: var(--button--border-width) solid transparent;
+            
+            &:hover {
+                background: var(--vv--color-white);
+                color: var(--vv--color-green);
+                border: var(--button--border-width) solid var(--vv--color-green);
+            }
+        }
+    }
+
+    .nf-field-element {
+        margin: 1.5rem 0 !important;
+
+        p {
+            font-size: var(--global--font-size-xs);
+        }
+    }
+}

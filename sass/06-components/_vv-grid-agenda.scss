@@ -1,0 +1,70 @@
+.vv-grid-agenda {
+    max-width: var(--responsive--alignwide-width) !important;
+    margin: 0 auto;
+    padding-top: 0 !important;
+        
+    @include media(tablet) {
+        padding-top: var(--global--spacing-vertical) !important;
+    }
+
+    .vv-grid-agenda-main {
+        max-width: var(--responsive--alignwide-width) !important;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0 !important;
+            
+        @include media(tablet) {
+            padding-top: var(--global--spacing-vertical) !important;
+        }
+
+        &__title {
+            color: var(--vv--color-dark-green);
+            text-transform: uppercase;
+            flex-basis: 100%;
+            padding-top: var(--global--spacing-vertical) !important;
+            margin-bottom: var(--global--spacing-vertical);
+        }
+
+        &__breadcrumbs {
+            font-size: smaller;
+            margin-bottom: var(--global--spacing-vertical);
+            flex-basis: 100%;
+        }
+
+        &__intro {
+            flex-basis: 100%;
+            margin-bottom: calc(2 * var(--global--spacing-vertical));
+
+            @include media(tablet) {
+                flex-basis: 65%;
+            }
+        }
+
+        &__item {
+            display: flex;        
+            flex-basis: 100%;
+            list-style: none;
+        }
+
+        &__footer {           
+            display: flex;
+            justify-content: center;
+
+            a {
+                font-size: var(--global--font-size-base) !important;
+                color: var(--vv--color-green);               
+                font-weight: bold;
+            }
+        }
+
+        p {
+            font-size: smaller;
+        }
+    }
+
+    ul, ol {
+        padding-left: 0 !important;
+    }    
+}
+

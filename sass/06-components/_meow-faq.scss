@@ -1,0 +1,26 @@
+.wp-block-meowapps-faq {
+    max-width: none;
+    margin-top: calc(.3 * var(--global--spacing-vertical)) !important;
+    margin-bottom: 0 !important;
+
+    .meow-faq-question { 
+        color: var(--vv--color-green);
+        font-weight: bold;
+        background: white;
+        font-size: var(--heading--font-size-h4);
+        padding: 0.5em 1.5em 0 0;
+    }
+
+    .meow-tab-answer {
+        color: black;
+
+        .meow-tab-content {
+            padding: 0;
+        }
+    }
+}
+
+.wp-block-meowapps-faq ~ h2 {
+    margin-top: calc(2 * var(--global--spacing-vertical)) !important;
+    margin-bottom: calc(0.66 * var(--global--spacing-vertical)) !important;    
+}

@@ -1,0 +1,17 @@
+.drst_agenda-template-default {
+    
+    .entry-footer {
+        display: none !important;
+    } 
+   
+    .navigation {
+        display: none;
+    }
+
+    .vv-hero {
+        &__excerpt {
+            color: var(--vv--color-dark-blue);
+            font-size: larger;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.is-style {
+    &-vv-parallax-a {
+        .wp-block-group__inner-container {
+            margin-left: 0;
+            margin-top: calc(1 * var(--global--spacing-vertical));
+
+            @include media(tablet) {
+                margin-left: -3rem;
+            }
+
+            @include media(wide) {
+                margin-left: -12rem;
+            }
+            
+            .wp-block-image {                         
+                text-align: left;
+
+                img {
+                    max-width: 75%;
+
+                    @include media(tablet) {
+                        max-width: 140%;
+                    }
+
+                    @include media(wide) {
+                        max-width: 200%;
+                    }
+                }
+            }
+        }
+    } 
+    
+    &-vv-parallax-b {           
+        .wp-block-group__inner-container {
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: -10rem;
+            
+            @include media(tablet) {
+                margin-top: -38rem;
+                margin-left: -1rem;
+                margin-bottom: 0;
+            }
+    
+            @include media(wide) {   
+                margin-top: -55rem;            
+                margin-left: 30rem;
+                margin-right: 2rem;
+            }
+         
+            .wp-block-image {
+                img {
+                    max-width: 100%;
+
+                    @include media(wide) {
+                        max-width: 150%;
+                    }
+                }                
+            }
+        }
+    }
+
+    &-vv-parallax-c {
+        .wp-block-group__inner-container {
+            margin-left: 0;
+            margin-top: calc(2 * var(--global--spacing-vertical));
+            margin-bottom: -7rem;
+
+            @include media(tablet) {
+                margin-left: -3rem;
+                margin-top: var(--global--spacing-vertical);
+            }
+
+            @include media(wide) {
+                margin-left: -11rem;
+            }
+         
+            .wp-block-image {
+                img {
+                    max-width: 100%;
+
+                    @include media(tablet) {
+                        max-width: 200%;
+                    }
+                }
+            }
+        }
+    }
+}

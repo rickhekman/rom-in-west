@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <clipPath id="clip-Email">
+      <rect width="54" height="54"/>
+    </clipPath>
+  </defs>
+  <g id="Email" clip-path="url(#clip-Email)">
+    <g id="Rectangle_1" data-name="Rectangle 1" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="54" height="54" stroke="none"/>
+      <rect x="1" y="1" width="52" height="52" fill="none"/>
+    </g>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M1600.251-10767h-22.445a2.8,2.8,0,0,0-2.792,2.806l-.014,16.834a2.814,2.814,0,0,0,2.806,2.806h22.445a2.814,2.814,0,0,0,2.806-2.806v-16.834A2.814,2.814,0,0,0,1600.251-10767Zm0,5.611-11.223,7.014-11.223-7.014v-2.806l11.223,7.015,11.223-7.015Z" transform="translate(-1561.757 10784.289)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

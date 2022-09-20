@@ -1,0 +1,23 @@
+.is-style {
+  &-vv-quote-block {  
+  
+    &::before {
+      font-size: larger;
+      left: 0;
+      font-size: xx-large;
+      top: -1.35rem;
+    }
+ 
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+      padding-right: 3rem;
+      margin-bottom: calc(.25 * var(--global--spacing-vertical));
+    }
+
+    cite {
+      font-size: small;
+      font-weight: bold;
+    }
+  }
+}

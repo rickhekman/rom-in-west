@@ -1,0 +1,28 @@
+.is-style {
+    &-vv-heading-underline {
+        text-decoration: underline;        
+    }
+
+    &-vv-breadcrumbs {        
+        font-size: smaller;   
+    }
+
+    &-vv-paragraph-intro {
+        max-width: 100% !important; 
+
+        @include media(wide) {
+            max-width: 75% !important; 
+        }
+    }
+
+    &-vv-heading-in-frame {
+        font-size: 1.75rem;      
+    }
+
+    &-vv-link-color {
+        a {
+            color: var(--vv--color-dark-green);
+            font-weight: bold;
+        }        
+    }
+}
