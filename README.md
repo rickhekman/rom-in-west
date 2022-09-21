@@ -1,7 +1,9 @@
-# Rom In West
+# ROM InWest
 
 This is a WordPress template created while working for Vorm Vijf.
 
+## Client
+ROM InWest
 
 ## Developers
 
