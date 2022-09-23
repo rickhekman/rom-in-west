@@ -1,6 +1,6 @@
 # ROM InWest
 
-This is a WordPress template created while working for Vorm Vijf.
+This is a WordPress template created while working for VormVijf.
 
 ![website preview](public/images/preview.jpg)<br />
 
