@@ -2,7 +2,8 @@
 
 This is a WordPress template created while working for Vorm Vijf.
 
-![website preview](public/images/preview.jpg)<br />
+![website preview](public/images/preview.jpg)<br /><br />
+![website animated preview](public/images/animated-preview.gif)<br />
 
 ## Client
 ROM InWest
